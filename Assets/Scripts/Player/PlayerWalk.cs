@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class PlayerWalk : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float walkSpeed = 0;
+    public float jumpSpeed = 0;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
+    
+    
 }
