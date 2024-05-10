@@ -18,6 +18,8 @@ public class PlayerWalk : MonoBehaviour
 
     public float GroundSpeed = 7f;
     public float AirSpeed = 5f;
+    public bool ground;
+    public bool wall;
 
     void Start()
     {
@@ -85,6 +87,31 @@ public class PlayerWalk : MonoBehaviour
             horizontal = 0;
         }
 
+    }
+
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Map"))
+        {
+            ground = true;
+
+        }
+        if (other.CompareTag("Wall"))
+        {
+            wall = true;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Map"))
+        {
+            ground = false;
+        }
+        if (other.CompareTag("Wall"))
+        {
+            wall = false;
+        }
     }
     
 }

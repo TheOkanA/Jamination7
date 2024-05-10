@@ -51,8 +51,13 @@ public class Walk : MonoBehaviour
         }
         if (other.CompareTag("Wall"))
         {
-            wall = true;
+            Invoke(nameof(WallTruer), 3f);
         }
+    }
+
+    private void WallTruer()
+    {
+        wall = true;
     }
     private void OnTriggerExit2D(Collider2D other)
     {
