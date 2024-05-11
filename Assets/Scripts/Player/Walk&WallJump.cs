@@ -11,6 +11,7 @@ public class Walk : MonoBehaviour
     bool facingRight = true;
     bool ground;
     bool wall;
+    bool jumpControl;
 
     void Start()
     {
@@ -31,14 +32,19 @@ public class Walk : MonoBehaviour
         {
             flip();
         }
-        if (Input.GetButtonDown("Jump") && (ground == true || wall == true))
+
+
+        if (Input.GetButtonDown("Jump") && jumpControl== true && (ground == true || wall == true))
         {
             rb.AddForce(new Vector3(rb.velocity.x, jump));
             wall = false;
+            jumpControl = false;
         }
+
+
         if (wall == true && ground == false)
         {
-            rb.velocity = new Vector3(rb.velocity.x, -slide);
+            transform.position += new Vector3(0, -1 * Time.deltaTime, 0);
         }
     }
 
@@ -47,24 +53,28 @@ public class Walk : MonoBehaviour
         if (other.CompareTag("Map"))
         {
             ground = true;
-
+            jumpControl = true;
         }
+
         if (other.CompareTag("Wall"))
         {
-            Invoke(nameof(WallTruer), 3f);
+            wall = true;
+            jumpControl = true;
         }
     }
 
-    private void WallTruer()
-    {
-        wall = true;
-    }
+    //private void WallTruer()
+    //{
+    //    wall = true;
+    //}
+
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Map"))
         {
             ground = false;
         }
+        jumpControl = false;
         if (other.CompareTag("Wall"))
         {
             wall = false;
