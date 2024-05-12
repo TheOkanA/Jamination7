@@ -12,6 +12,7 @@ public class Walk : MonoBehaviour
     bool ground;
     bool wall;
     bool jumpControl;
+    public GameObject rotationer;
 
     void Start()
     {
@@ -24,13 +25,13 @@ public class Walk : MonoBehaviour
         float moveInput = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
 
-        if (moveInput < 0 && facingRight == true)
+        if (moveInput < 0 && facingRight)
         {
-            flipToLeft();
+            flip();
         }
-        if (moveInput > 0 && facingRight == false)
+        if (moveInput > 0 && !facingRight)
         {
-            flipToRight();
+            flip();
         }
 
 
@@ -45,6 +46,10 @@ public class Walk : MonoBehaviour
         if (wall == true && ground == false)
         {
             transform.position += new Vector3(0, -1 * Time.deltaTime, 0);
+        }
+        if(wall == false && ground == true)
+        {
+            jumpControl = true;
         }
     }
 
@@ -81,15 +86,9 @@ public class Walk : MonoBehaviour
         }
     }
 
-    void flipToRight()
+    void flip()
     {
-        facingRight = true;
-        transform.localScale = new Vector3(-1, 1, 1);
-    }
-
-    void flipToLeft()
-    {
-        facingRight = false;
-        transform.localScale = new Vector3(1, 1, 1);
+        facingRight = !facingRight;
+        rotationer.transform.Rotate(0, 180, 0);
     }
 }
