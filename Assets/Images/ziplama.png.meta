@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bf6cc27919eab72408fe3f6c81e145c6
+guid: 786c5a5052d75774e922f9a8337042ba
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 512
+  spritePixelsToUnits: 331
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,169 +97,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HandWalk_0
+      name: ziplama_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1299.875
-        height: 1295
+        width: 1000
+        height: 1000
       alignment: 9
-      pivot: {x: 0.35868213, y: 0.5035463}
+      pivot: {x: 0.40063593, y: 0.40946814}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04b1be7fc27bbbd4db612905b4c98d23
-      internalID: 636091654
+      spriteID: ad79495dc9e966a4fbd0b2187dfb98ee
+      internalID: 2002671010
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HandWalk_1
+      name: ziplama_1
       rect:
         serializedVersion: 2
-        x: 1299
+        x: 1000
         y: 0
-        width: 1299.875
-        height: 1295
+        width: 1000
+        height: 1000
       alignment: 9
-      pivot: {x: 0.3728138, y: 0.49290758}
+      pivot: {x: 0.40726, y: 0.37855497}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 373bbf6d7c217cf4ca6cc9b4740bf64a
-      internalID: 472444555
+      spriteID: 8d3d3b383549826409992aa7cdf61c43
+      internalID: 1988228335
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HandWalk_2
+      name: ziplama_2
       rect:
         serializedVersion: 2
-        x: 2607
+        x: 2000
         y: 0
-        width: 1300
-        height: 1295
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 78de85b3c87e9714abd725a841d302b0
-      internalID: -35119607
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HandWalk_3
-      rect:
-        serializedVersion: 2
-        x: 3906
-        y: 0
-        width: 1300
-        height: 1295
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 83e6989138ad5cf4c991c03c3883fc64
-      internalID: -1037120092
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HandWalk_4
-      rect:
-        serializedVersion: 2
-        x: 5201
-        y: 0
-        width: 1300
-        height: 1295
+        width: 1000
+        height: 1000
       alignment: 9
-      pivot: {x: 0.5600537, y: 0.49999994}
+      pivot: {x: 0.41167626, y: 0.37193066}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e106f7cf9039f84e97aad1244e9bcec
-      internalID: 1362070790
+      spriteID: 8d8699c7f2fd496478db228c3b4fabc7
+      internalID: 157865039
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HandWalk_5
+      name: ziplama_3
       rect:
         serializedVersion: 2
-        x: 6495
+        x: 3000
         y: 0
-        width: 1300
-        height: 1295
+        width: 1000
+        height: 1000
       alignment: 9
-      pivot: {x: 0.6236403, y: 0.49999994}
+      pivot: {x: 0.5154563, y: 0.55520207}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f666c6276d0a07b418fa9a60c69085fb
-      internalID: -819933476
+      spriteID: 4e56c21670dfd8b48a4fc0e5c9b30f91
+      internalID: -901056817
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HandWalk_6
+      name: ziplama_4
       rect:
         serializedVersion: 2
-        x: 7803
+        x: 4000
         y: 0
-        width: 1300
-        height: 1295
+        width: 1000
+        height: 1000
       alignment: 9
-      pivot: {x: 0.71195537, y: 0.4964536}
+      pivot: {x: 0.5331211, y: 0.5706588}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eec15f8cbb6e7ae4fb02cd339eba6f1f
-      internalID: -402520169
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HandWalk_7
-      rect:
-        serializedVersion: 2
-        x: 9099
-        y: 0
-        width: 1300
-        height: 1295
-      alignment: 9
-      pivot: {x: 0.71195537, y: 0.49999994}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8cd75acf9778a2f4ca95e98654eb2df7
-      internalID: 425388472
+      spriteID: 745e4f6cd4d31f24fbafef7970b170ad
+      internalID: -1292511510
       vertices: []
       indices: 
       edges: []
@@ -275,14 +212,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      HandWalk_0: 636091654
-      HandWalk_1: 472444555
-      HandWalk_2: -35119607
-      HandWalk_3: -1037120092
-      HandWalk_4: 1362070790
-      HandWalk_5: -819933476
-      HandWalk_6: -402520169
-      HandWalk_7: 425388472
+      ziplama_0: 2002671010
+      ziplama_1: 1988228335
+      ziplama_2: 157865039
+      ziplama_3: -901056817
+      ziplama_4: -1292511510
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -27,13 +27,13 @@ public class Walk : MonoBehaviour
         float moveInput = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
 
-        if (moveInput < 0 && facingRight == true)
-        {
-            flipToLeft();
-        }
-        if (moveInput > 0 && facingRight == false)
+        if (moveInput < 0)
         {
             flipToRight();
+        }
+        if (moveInput > 0)
+        {
+            flipToLeft();
         }
 
         if (moveInput != 0)
@@ -46,19 +46,24 @@ public class Walk : MonoBehaviour
         }
 
         gloveAnim.SetBool("isWalking", isWalking);
-
+        
         if (Input.GetButtonDown("Jump") && jumpControl == true && (ground == true || wall == true))
         {
             rb.AddForce(new Vector3(rb.velocity.x, jump));
+            gloveAnim.SetTrigger("jumpIs");
             wall = false;
             jumpControl = false;
         }
+
+        gloveAnim.SetBool("onGround", ground);
 
 
         if (wall == true && ground == false)
         {
             transform.position += new Vector3(0, -1 * Time.deltaTime, 0);
         }
+
+        
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -76,10 +81,6 @@ public class Walk : MonoBehaviour
         }
     }
 
-    //private void WallTruer()
-    //{
-    //    wall = true;
-    //}
 
     private void OnTriggerExit2D(Collider2D other)
     {
