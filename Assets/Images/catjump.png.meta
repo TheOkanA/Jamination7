@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 789087b105df4ec458d2d6bfd0f5f86c
+guid: 524070904aaa1034f8fb1508a6b41b44
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,106 +97,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CatWalk_Animation_0
+      name: catjump_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 521
-        height: 375
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 447
+        height: 391
+      alignment: 9
+      pivot: {x: 0.589207, y: 0.39195824}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 750fd19f5b799b2469629ca68f0d3385
-      internalID: 1008854248
+      spriteID: 6aa2330c6dd078542b88476b796f9f34
+      internalID: 46227317
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CatWalk_Animation_1
+      name: catjump_1
       rect:
         serializedVersion: 2
-        x: 521
+        x: 447
         y: 0
-        width: 521
-        height: 375
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 447
+        height: 391
+      alignment: 9
+      pivot: {x: 0.40814346, y: 0.49495134}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de74fa4a85f0e174881bdb8d3fa1475d
-      internalID: 1218154978
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CatWalk_Animation_2
-      rect:
-        serializedVersion: 2
-        x: 1042
-        y: 0
-        width: 521
-        height: 375
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 55f8403620130924a82330ea2db0a882
-      internalID: 1306955467
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CatWalk_Animation_3
-      rect:
-        serializedVersion: 2
-        x: 1563
-        y: 0
-        width: 521
-        height: 375
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7a50553eb21ae00468121281b9f0bb41
-      internalID: 892671109
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CatWalk_Animation_4
-      rect:
-        serializedVersion: 2
-        x: 2084
-        y: 0
-        width: 521
-        height: 375
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e3ed4511f5bcf5541838afc760bf7972
-      internalID: -1060656686
+      spriteID: c8b32c152e9646d4eb90ed2aa9d1aef6
+      internalID: 1897486050
       vertices: []
       indices: 
       edges: []
@@ -212,11 +149,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      CatWalk_Animation_0: 1008854248
-      CatWalk_Animation_1: 1218154978
-      CatWalk_Animation_2: 1306955467
-      CatWalk_Animation_3: 892671109
-      CatWalk_Animation_4: -1060656686
+      catjump_0: 46227317
+      catjump_1: 1897486050
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

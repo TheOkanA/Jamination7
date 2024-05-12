@@ -9,12 +9,15 @@ public class Walk : MonoBehaviour
     private Rigidbody2D rb;
     public float jump = 0;
     public float slide = 0;
-    bool facingRight = true;
+    //bool facingRight = true;
     bool ground;
     bool wall;
     bool jumpControl;
     bool isWalking = false;
     public Animator gloveAnim;
+    public Animator catAnim;
+    public Animator manavAnim;
+    public PlayerPosseser playerPosseser;
 
     void Start()
     {
@@ -45,22 +48,29 @@ public class Walk : MonoBehaviour
             isWalking = false;
         }
 
+
+
         gloveAnim.SetBool("isWalking", isWalking);
+        catAnim.SetBool("catisWalking", isWalking);
+        manavAnim.SetBool("manavisWalking", isWalking);
         
         if (Input.GetButtonDown("Jump") && jumpControl == true && (ground == true || wall == true))
         {
             rb.AddForce(new Vector3(rb.velocity.x, jump));
             gloveAnim.SetTrigger("jumpIs");
+            catAnim.SetTrigger("catjumpIs");
             wall = false;
             jumpControl = false;
         }
 
         gloveAnim.SetBool("onGround", ground);
+        catAnim.SetBool("catonGround", ground);
 
 
         if (wall == true && ground == false)
         {
             transform.position += new Vector3(0, -1 * Time.deltaTime, 0);
+            catAnim.SetBool("catonWall", true);
         }
 
         
@@ -78,6 +88,7 @@ public class Walk : MonoBehaviour
         {
             wall = true;
             jumpControl = true;
+            catAnim.SetBool("catonWall", true);
         }
     }
 
@@ -92,18 +103,19 @@ public class Walk : MonoBehaviour
         if (other.CompareTag("Wall"))
         {
             wall = false;
+            catAnim.SetBool("catonWall", false);
         }
     }
 
     void flipToRight()
     {
-        facingRight = true;
+        //facingRight = true;
         transform.localScale = new Vector3(-1, 1, 1);
     }
 
     void flipToLeft()
     {
-        facingRight = false;
+        //facingRight = false;
         transform.localScale = new Vector3(1, 1, 1);
     }
 }

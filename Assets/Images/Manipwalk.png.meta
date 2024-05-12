@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 789087b105df4ec458d2d6bfd0f5f86c
+guid: c699b91f721ffda4faf1a79ae5115e3f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 128
+  spritePixelsToUnits: 150
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,106 +97,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CatWalk_Animation_0
+      name: Manipwalk_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 521
-        height: 375
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 727.25
+        height: 1121
+      alignment: 9
+      pivot: {x: 0.462904, y: 0.40029788}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 750fd19f5b799b2469629ca68f0d3385
-      internalID: 1008854248
+      spriteID: ff965e3f88b3d5e419861f6dc425ac97
+      internalID: 314719130
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CatWalk_Animation_1
+      name: Manipwalk_1
       rect:
         serializedVersion: 2
-        x: 521
+        x: 727
         y: 0
-        width: 521
-        height: 375
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 727.25
+        height: 1121
+      alignment: 9
+      pivot: {x: 0.42050886, y: 0.43123978}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de74fa4a85f0e174881bdb8d3fa1475d
-      internalID: 1218154978
+      spriteID: b5d9e1f0982abe947ba32615a56d9540
+      internalID: 670456783
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CatWalk_Animation_2
+      name: Manipwalk_2
       rect:
         serializedVersion: 2
-        x: 1042
+        x: 1454
         y: 0
-        width: 521
-        height: 375
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 727.25
+        height: 1121
+      alignment: 9
+      pivot: {x: 0.42580777, y: 0.4071738}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55f8403620130924a82330ea2db0a882
-      internalID: 1306955467
+      spriteID: 2b5c2434f2142ec4695cef61e42e56de
+      internalID: -2053262011
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CatWalk_Animation_3
+      name: Manipwalk_3
       rect:
         serializedVersion: 2
-        x: 1563
+        x: 2181
         y: 0
-        width: 521
-        height: 375
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 727.25
+        height: 1121
+      alignment: 9
+      pivot: {x: 0.37988013, y: 0.43811586}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a50553eb21ae00468121281b9f0bb41
-      internalID: 892671109
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CatWalk_Animation_4
-      rect:
-        serializedVersion: 2
-        x: 2084
-        y: 0
-        width: 521
-        height: 375
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e3ed4511f5bcf5541838afc760bf7972
-      internalID: -1060656686
+      spriteID: 6891c0a2c0133e34e85cb7ba3c0ba6ca
+      internalID: -584967545
       vertices: []
       indices: 
       edges: []
@@ -212,11 +191,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      CatWalk_Animation_0: 1008854248
-      CatWalk_Animation_1: 1218154978
-      CatWalk_Animation_2: 1306955467
-      CatWalk_Animation_3: 892671109
-      CatWalk_Animation_4: -1060656686
+      Manipwalk_0: 314719130
+      Manipwalk_1: 670456783
+      Manipwalk_2: -2053262011
+      Manipwalk_3: -584967545
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
