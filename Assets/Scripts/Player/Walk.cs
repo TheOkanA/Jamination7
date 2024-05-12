@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Animations;
 
 public class Walk : MonoBehaviour
 {
@@ -12,7 +13,8 @@ public class Walk : MonoBehaviour
     bool ground;
     bool wall;
     bool jumpControl;
-    public GameObject rotationer;
+    bool isWalking = false;
+    public Animator gloveAnim;
 
     void Start()
     {
@@ -25,17 +27,27 @@ public class Walk : MonoBehaviour
         float moveInput = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
 
-        if (moveInput < 0 && facingRight)
+        if (moveInput < 0 && facingRight == true)
         {
-            flip();
+            flipToLeft();
         }
-        if (moveInput > 0 && !facingRight)
+        if (moveInput > 0 && facingRight == false)
         {
-            flip();
+            flipToRight();
         }
 
+        if (moveInput != 0)
+        {
+            isWalking = true;
+        }
+        else
+        {
+            isWalking = false;
+        }
 
-        if (Input.GetButtonDown("Jump") && jumpControl== true && (ground == true || wall == true))
+        gloveAnim.SetBool("isWalking", isWalking);
+
+        if (Input.GetButtonDown("Jump") && jumpControl == true && (ground == true || wall == true))
         {
             rb.AddForce(new Vector3(rb.velocity.x, jump));
             wall = false;
@@ -46,10 +58,6 @@ public class Walk : MonoBehaviour
         if (wall == true && ground == false)
         {
             transform.position += new Vector3(0, -1 * Time.deltaTime, 0);
-        }
-        if(wall == false && ground == true)
-        {
-            jumpControl = true;
         }
     }
 
@@ -86,9 +94,15 @@ public class Walk : MonoBehaviour
         }
     }
 
-    void flip()
+    void flipToRight()
     {
-        facingRight = !facingRight;
-        rotationer.transform.Rotate(0, 180, 0);
+        facingRight = true;
+        transform.localScale = new Vector3(-1, 1, 1);
+    }
+
+    void flipToLeft()
+    {
+        facingRight = false;
+        transform.localScale = new Vector3(1, 1, 1);
     }
 }
