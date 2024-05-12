@@ -24,13 +24,13 @@ public class Walk : MonoBehaviour
         float moveInput = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
 
-        if (moveInput < 0 && facingRight)
+        if (moveInput < 0 && facingRight == true)
         {
-            flip();
+            flipToLeft();
         }
-        if (moveInput > 0 && !facingRight)
+        if (moveInput > 0 && facingRight == false)
         {
-            flip();
+            flipToRight();
         }
 
 
@@ -81,9 +81,15 @@ public class Walk : MonoBehaviour
         }
     }
 
-    void flip()
+    void flipToRight()
     {
-        facingRight = !facingRight;
-        transform.Rotate(0, 180, 0);
+        facingRight = true;
+        transform.localScale = new Vector3(-1, 1, 1);
+    }
+
+    void flipToLeft()
+    {
+        facingRight = false;
+        transform.localScale = new Vector3(1, 1, 1);
     }
 }
